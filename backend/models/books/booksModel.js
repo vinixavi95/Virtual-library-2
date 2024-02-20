@@ -7,17 +7,22 @@ const bookSchema = new mongoose.Schema({
     genre: String,
     published: String,
     synopsis: String
-});
+}, { collection : 'livros' });
 
 const Book = mongoose.model('Book', bookSchema);
 
 module.exports={
-     
-    fetchData:function(callback){
-       const booksData=Book.find({});
-       booksData.exec(function(err, data){
-           if(err) throw err;
-           return callback(data);
-       })
+
+    fetchData: async function (callback) {
+        try {
+            const booksData = await Book.find({});
+            console.log('CHEGA NO MODELO???? ', booksData);
+            callback(booksData);
+        } catch (err) {
+            console.error('Error fetching data from MongoDB:', err);
+            console.error(err);
+            callback(null); // ou outra lógica de tratamento de erro
+        }
     }
+    
 }
