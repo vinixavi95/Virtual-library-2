@@ -17,6 +17,10 @@ Open [http://localhost:5000](http://localhost:5000) to charge the server.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Frontend
+
+To build the frontend to this application was used a component library called Material UI, the components is not ready yet and as we are currently in the development moment probably we are going to use others libraries and frameworks, currently we are working in creating login and in the sequence we are going to connect frontend and backend.
+
 ## Backend
 
-The backend project to virtual library connect the mongoDB database to virtual library aplication, the backend pattern is MVC and the aplication can get the data books from there, the project is currently in development and the idea is to create a way to manager all books that I've had contact
+The backend project to virtual library connect the mongoDB database to virtual library aplication, the backend pattern is MVC and the aplication can get the data books from there, the project is currently in development and the idea is to create a way to manager all books that I've had contact.
