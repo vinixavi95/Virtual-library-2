@@ -23,4 +23,6 @@ To build the frontend to this application was used a component library called Ma
 
 ## Backend
 
-The backend project to virtual library connect the mongoDB database to virtual library aplication, the backend pattern is MVC and the aplication can get the data books from there, the project is currently in development and the idea is to create a way to manager all books that I've had contact.
+The backend project to virtual library connect the MongoDB database to virtual library aplication, the backend pattern is MVC and the aplication can get the data books from there, the project is currently in development and the idea is to create a way to manager all books that I've had contact.
+
+To access data coming from MongoDB is necessary connect to a database, we are using express server with mongoose to comunicate. It was connecet through the URL from Mongo Atlas, so if you want to connect with your source of data you must use the .env archive to indicate your MongoDB database.
